@@ -1,2 +1,2 @@
 #!/bin/bash
-caddy start
+caddy start --config Caddyfile
