@@ -9,9 +9,10 @@
 		"host": {
 			"description": "Host URL",
 			"value": "https://google.com"
-		},
-		"website": "",
-		"repository": "",
-		"stack": "container"
-	}
+		}
+
+	},
+	"website": "",
+	"repository": "",
+	"stack": "container"
 }
