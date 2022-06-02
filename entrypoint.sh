@@ -1,2 +1,2 @@
 #!/bin/bash
-caddy run
+caddy start
