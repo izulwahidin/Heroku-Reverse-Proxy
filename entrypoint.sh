@@ -1,3 +1,3 @@
 #!/bin/bash
-cat Caddyfile
+echo $host
 caddy start --config Caddyfile
