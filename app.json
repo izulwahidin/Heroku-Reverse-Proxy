@@ -1,6 +1,3 @@
-
-
-
 {
   "name": "Heroku Reverse Proxy",
   "description": "An simple way to create reverse proxy.",
