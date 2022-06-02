@@ -1,7 +1,7 @@
 {
   "name": "Heroku Reverse Proxy",
   "description": "An simple way to create reverse proxy.",
-  "keywords": ["reverse proxy", "caddy"],
+  "keywords": {"reverse proxy", "caddy"},
   "env": {
      "host": {
       "description": "Host URL",
