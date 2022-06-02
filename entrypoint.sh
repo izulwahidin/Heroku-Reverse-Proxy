@@ -1,3 +1,3 @@
 #!/bin/bash
-echo ls /main/
+ls /main/
 caddy start --config Caddyfile
