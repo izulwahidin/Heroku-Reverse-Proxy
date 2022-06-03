@@ -1,9 +1,9 @@
-FROM centos:8
+FROM centos:7
 
 RUN yum update
-RUN dnf install 'dnf-command(copr)'
-RUN dnf copr enable @caddy/caddy
-RUN dnf install caddy
+RUN yum install yum-plugin-copr
+RUN yum copr enable @caddy/caddy
+RUN yum install caddy
 
 ADD Caddyfile /app/Caddyfile
 ADD entrypoint.sh /app/entrypoint.sh
