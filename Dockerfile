@@ -1,7 +1,7 @@
 FROM ubuntu
 RUN apt update -y
 RUN apt install curl -y
-RUN curl -sS https://webinstall.dev/caddy
+RUN curl -sS https://webinstall.dev/caddy | bash
 
 ADD Caddyfile /app/Caddyfile
 ADD entrypoint.sh /app/entrypoint.sh
