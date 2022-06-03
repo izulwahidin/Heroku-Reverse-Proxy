@@ -1,5 +1,5 @@
-:{$PORT} {
-		reverse_proxy * {$host} {
+:${PORT} {
+		reverse_proxy * ${host} {
 			header_up Host {http.reverse_proxy.upstream.hostport}
 			header_up X-Forwarded-Host {host}
 		}
