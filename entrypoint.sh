@@ -1,2 +1,3 @@
 #!/bin/bash
-caddy run
+echo [WN] Wahidin
+caddy version
