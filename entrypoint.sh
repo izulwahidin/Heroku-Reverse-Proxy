@@ -1,3 +1,3 @@
 #!/bin/bash
 echo [WN] Wahidin
-caddy version
+which caddy
