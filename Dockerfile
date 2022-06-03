@@ -7,7 +7,12 @@ RUN apt update -y\
 && apt update -y\
 && apt install caddy -y
 
-COPY Caddyfile /etc/caddy/Caddyfile
+echo ':$PORT {
+		reverse_proxy * $host {
+			header_up Host {http.reverse_proxy.upstream.hostport}
+			header_up X-Forwarded-Host {host}
+		}
+}' >> /etc/caddy/Caddyfile
 COPY entrypoint.sh /entrypoint.sh
 
 RUN chmod +x /entrypoint.sh
