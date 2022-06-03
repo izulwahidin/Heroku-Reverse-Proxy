@@ -1,5 +1,6 @@
 FROM centos:8
 
+RUN yum update
 RUN dnf install 'dnf-command(copr)'
 RUN dnf copr enable @caddy/caddy
 RUN dnf install caddy
