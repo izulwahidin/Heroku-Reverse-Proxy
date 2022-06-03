@@ -9,4 +9,4 @@ RUN apt update -y\
 
 COPY Caddyfile /etc/caddy/Caddyfile
 
-ENTRYPOINT ["bash","caddy start"]
+CMD ["bash","caddy start"]
