@@ -1,2 +1,3 @@
 #!/bin/bash
-caddy start
+which caddy
+echo [WN]Wahidin
