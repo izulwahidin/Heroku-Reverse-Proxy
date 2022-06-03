@@ -1,6 +1,5 @@
 FROM ubuntu
-RUN apt update -y\
-    apt install curl -y
+RUN apt update -y
 RUN apt install caddy -y
 
 ADD Caddyfile /app/Caddyfile
