@@ -8,5 +8,8 @@ RUN apt update -y\
 && apt install caddy -y
 
 COPY Caddyfile /etc/caddy/Caddyfile
+COPY entrypoint.sh /entrypoint.sh
 
-CMD ["bash","caddy start"]
+RUN chmod +x /entrypoint.sh
+
+CMD ["/entrypoint.sh"]
