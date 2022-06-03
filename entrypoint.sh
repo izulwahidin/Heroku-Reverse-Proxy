@@ -1,1 +1,1 @@
-caddy start
+/usr/bin/caddy start
