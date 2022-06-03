@@ -1,8 +1,7 @@
 FROM caddy
 
-ADD Caddyfile /app/Caddyfile
-ADD entrypoint.sh /app/entrypoint.sh
+COPY Caddyfile /etc/caddy/Caddyfile
 
-RUN chmod +x /app/entrypoint.sh
+RUN chmod +x /entrypoint.sh
 
-ENTRYPOINT ["bash","/app/entrypoint.sh"]
+ENTRYPOINT ["bash","/entrypoint.sh"]
