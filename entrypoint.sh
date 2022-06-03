@@ -1,1 +1,1 @@
-caddy run
+caddy start
