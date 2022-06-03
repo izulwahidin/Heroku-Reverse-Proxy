@@ -1,5 +1,5 @@
-${DOMAIN}
-  {reverse_proxy * ${UPSTREAM} {
+${DOMAIN}{
+  reverse_proxy * ${UPSTREAM} {
     header_up Host {http.reverse_proxy.upstream.hostport}
     header_up X-Forwarded-Host {host}
   }
