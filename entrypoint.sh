@@ -1,3 +1,3 @@
 #!/bin/bash
 ls /main/
-caddy run --config "/main/Caddyfile"
+caddy run --config "/app/Caddyfile"
