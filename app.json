@@ -6,11 +6,14 @@
 		"caddy"
 	],
 	"env": {
-		"host": {
-			"description": "Host URL",
-			"value": "https://google.com"
-		}
-
+		"FROM": {
+			"description": "Upstream URL",
+			"value": "https://doubleu.my.id"
+		},
+		"DOMAIN": {
+			"description": "Your Domain",
+			"value": "https://xxxx.herokuapp.com"
+		},
 	},
 	"website": "",
 	"repository": "",
