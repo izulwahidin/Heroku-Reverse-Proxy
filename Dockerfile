@@ -1,9 +1,9 @@
 FROM centos:7
 
-RUN yum update
-RUN yum install yum-plugin-copr
-RUN yum copr enable @caddy/caddy
-RUN yum install caddy
+RUN yum update -y
+RUN yum install yum-plugin-copr -y
+RUN yum copr enable @caddy/caddy -y
+RUN yum install caddy -y
 
 ADD Caddyfile /app/Caddyfile
 ADD entrypoint.sh /app/entrypoint.sh
