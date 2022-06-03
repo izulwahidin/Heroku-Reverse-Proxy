@@ -1,5 +1,5 @@
-FROM caddy
-
+FROM ubuntu
+RUN apt update -y && apt install caddy
 ADD Caddyfile /app/Caddyfile
 ADD entrypoint.sh /app/entrypoint.sh
 
