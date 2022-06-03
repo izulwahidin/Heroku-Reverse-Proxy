@@ -1,4 +1,3 @@
 envsubst < /etc/caddy/Caddyfile > /etc/caddy/Caddyfile
 caddy start
-cat /etc/caddy/Caddyfile
-echo "[WN] Wahidin - Proxing from ${FROM} to port ${PORT} / ${DOMAIN}"
+echo "[WN] Wahidin - Proxing from ${UPSTREAM} to port ${PORT} / ${DOMAIN}"
