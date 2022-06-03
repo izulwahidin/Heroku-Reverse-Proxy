@@ -6,13 +6,13 @@
 		"caddy"
 	],
 	"env": {
-		"FROM": {
+		"UPSTREAM": {
 			"description": "Upstream URL",
 			"value": "https://doubleu.my.id"
 		},
 		"DOMAIN": {
 			"description": "Your Domain",
-			"value": "https://xxxx.herokuapp.com"
+			"value": "xxxx.herokuapp.com"
 		},
 	},
 	"website": "",
