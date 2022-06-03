@@ -3,8 +3,8 @@ FROM ubuntu
 RUN apt update
 RUN apt install wget -y
 RUN apt install -y debian-keyring debian-archive-keyring apt-transport-https
-RUN wget 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' >> /usr/share/keyrings/caddy-stable-archive-keyring.gpg
-RUN wget 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' >> /etc/apt/sources.list.d/caddy-stable.list
+RUN wget 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' -O /usr/share/keyrings/caddy-stable-archive-keyring.gpg
+RUN wget 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' -O /etc/apt/sources.list.d/caddy-stable.list
 RUN apt update
 RUN apt install caddy
 
