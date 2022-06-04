@@ -1,21 +1,17 @@
 {
-	"name": "Heroku Reverse Proxy",
-	"description": "An simple way to create reverse proxy.",
-	"keywords": [
-		"reverse proxy",
-		"caddy"
-	],
-	"env": {
-		"UPSTREAM": {
-			"description": "Upstream URL",
-			"value": "https://doubleu.my.id"
-		},
-		"DOMAIN": {
-			"description": "Your Domain",
-			"value": "xxxx.herokuapp.com"
-		},
-	},
-	"website": "",
-	"repository": "",
-	"stack": "container"
-}
+  "name": "Heroku Reverse Proxy",
+  "description": "An simple way to create reverse proxy.",
+  "keywords": ["reverse proxy", "caddy"],
+  "env": {
+     "UPSTREAM": {
+      "description": "Upstream URL with http/s & without slash (/) in the end of URL",
+      "value": "https://www.google.com"
+    },
+     "DOMAIN": {
+      "description": "your sub/domain without http/s",
+      "value": ""
+    },
+  "website": "",
+  "repository": "",
+  "stack": "container"
+ }

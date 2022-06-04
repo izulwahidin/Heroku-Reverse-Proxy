@@ -1,3 +1,2 @@
-FROM caddy:latest
+FROM caddy
 COPY Caddyfile /etc/caddy/Caddyfile
-CMD ["caddy","start"]

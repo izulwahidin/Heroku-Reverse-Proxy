@@ -1,4 +1,8 @@
-{$DOMAIN:"localhost"} {
+{
+    http_port 880
+    https_port 4443
+}
+{$DOMAIN:localhost} {
 	reverse_proxy * {$UPSTREAM:"https://www.google.com"} {
 		header_up Host {upstream_hostport}
 	}
