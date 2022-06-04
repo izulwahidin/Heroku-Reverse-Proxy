@@ -3,4 +3,8 @@
     header_up Host {http.reverse_proxy.upstream.hostport}
     header_up X-Forwarded-Host {host}
   }
+  log {
+    level DEBUG
+    output file /log.log
+    }
 }
