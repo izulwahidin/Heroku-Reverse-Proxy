@@ -6,7 +6,7 @@
      "UPSTREAM": {
       "description": "Upstream URL with http/s & without slash (/) in the end of URL",
       "value": "https://www.google.com",
-      "required": true
+      "required": 1
     }
   "website": "",
   "repository": "",
