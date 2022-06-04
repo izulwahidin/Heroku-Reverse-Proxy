@@ -1,7 +1,6 @@
 {$DOMAIN} {
   reverse_proxy * {$UPSTREAM} {
-    header_up Host {http.reverse_proxy.upstream.hostport}
-    header_up X-Forwarded-Host {host}
+    header_up Host {upstream_hostport}
   }
   log {
     level DEBUG
