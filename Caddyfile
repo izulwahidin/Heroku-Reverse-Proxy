@@ -2,7 +2,7 @@
     http_port {$PORT}
     https_port 4443
 }
-{$DOMAIN:localhost} {
+{$DOMAIN} {
 	reverse_proxy * {$UPSTREAM:"https://www.google.com"} {
 		header_up Host {upstream_hostport}
 	}
