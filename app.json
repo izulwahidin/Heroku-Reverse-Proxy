@@ -5,12 +5,9 @@
   "env": {
      "UPSTREAM": {
       "description": "Upstream URL with http/s & without slash (/) in the end of URL",
-      "value": "https://www.google.com"
-    },
-     "DOMAIN": {
-      "description": "your sub/domain without http/s",
-      "value": ""
-    },
+      "value": "https://www.google.com",
+      "required": true
+    }
   "website": "",
   "repository": "",
   "stack": "container"
