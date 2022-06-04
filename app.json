@@ -5,8 +5,7 @@
   "env": {
      "UPSTREAM": {
       "description": "Upstream URL with http/s & without slash (/) in the end of URL",
-      "value": "https://www.google.com",
-      "required": 1
+      "value": "https://www.google.com"
     }
   "website": "",
   "repository": "",
