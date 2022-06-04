@@ -1,9 +1,5 @@
-{$DOMAIN} {
-  reverse_proxy * {$UPSTREAM} {
-    header_up Host {upstream_hostport}
-  }
-  log {
-    level DEBUG
-    output file /log.log
-    }
+{$DOMAIN:"localhost"} {
+	reverse_proxy * {$UPSTREAM:"https://www.google.com"} {
+		header_up Host {upstream_hostport}
+	}
 }
