@@ -1,3 +1,3 @@
 FROM caddy:latest
 COPY Caddyfile /etc/caddy/Caddyfile
-CMD ["run"]
+CMD ["caddy run"]
