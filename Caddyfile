@@ -1,5 +1,5 @@
 {
-    http_port 880
+    http_port {$PORT}
     https_port 4443
 }
 {$DOMAIN:localhost} {
