@@ -1,4 +1,4 @@
-:{$PORT} {
+{$DOMAIN} {
   reverse_proxy * {$UPSTREAM} {
     header_up Host {upstream_hostport}
   }
