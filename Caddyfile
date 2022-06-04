@@ -1,8 +1,4 @@
-{
-    http_port {$PORT}
-    https_port 4443
-}
-0.0.0.0 {
+:{$PORT} {
 	reverse_proxy * {$UPSTREAM:"https://www.google.com"} {
 		header_up Host {upstream_hostport}
 	}
